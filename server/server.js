@@ -35,6 +35,9 @@ app.use('/api/users', require('./routes/api/users'));
 app.get('/', (req, res) => {
   res.send('Server is up and running 🚀');
 });
-app.listen(port, function() {
+app.listen(port, function(err) {
+  if (err) consolxe.log("THIS BITCH DOWN 🚨")
   console.log(`Express app running on port ${port}`);
 });
+
+
