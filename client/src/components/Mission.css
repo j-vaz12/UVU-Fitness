@@ -1,0 +1,16 @@
+.mission {
+  padding: 3rem 2rem;
+  background: gray; /* soft blue-gray */
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission p {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
