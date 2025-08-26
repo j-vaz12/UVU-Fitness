@@ -1,0 +1,153 @@
+.mission-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  padding: 60px 20px;
+}
+
+/* src/components/Mission.css */
+.mission-section {
+  position: relative;
+  background-image: url('/assets/mission-bg.jpg'); /* You can add your own image */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.mission-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-section p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.coaching-style {
+  max-width: 1000px;
+  margin: 80px auto;
+  background-color: #ffffff;
+  color: #333;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.coaching-style h3 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: #111;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.coaching-style ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.coaching-style li {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.coaching-style li strong {
+  display: block;
+  color: #0077cc;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.coaching-style p {
+  font-size: 1.125rem;
+  color: #444;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.coaching-style strong {
+  color: #0056b3;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.coaching-style span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.coaching-style-section {
+  position: relative;
+  background-image: url('/assets/coaching-bg.jpg'); /* Add your own background image */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.coaching-style-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.coaching-style-overlay h3 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 0.5rem;
+}
+
+.coaching-style-overlay ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.coaching-style-overlay li {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.coaching-style-overlay li strong {
+  display: block;
+  color: #66ccff;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.coaching-style-overlay p {
+  font-size: 1.125rem;
+  color: #ddd;
+  margin-top: 2rem;
+  text-align: center;
+}

@@ -1,25 +1,19 @@
-import { useState } from 'react'
-import Home from "./pages/Home"; 
-import Waves from "./components/Waves/Waves";
-// import Footer from "./pages/Hero "
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-
-// import Waves from "./comp %"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Mission from "./pages/MissionStatement";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      {/* <Waves /> */}
-      <Home />;
-      
-      {/* <Hero />
-      <Footer /> */}
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Mission />} />
+        <Route path="/about" element={<AboutMe />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
-export default App
+export default App;

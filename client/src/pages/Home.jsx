@@ -1,15 +1,15 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
-import Mission from "../components/Mission"
+import Navbar from "../components/Navbar.jsx";
+import Hero from "../components/Hero.jsx";
+import Footer from "../components/Footer.jsx";
+import Mission from "../components/Mission.jsx"
 
 const Home = () => {
     return (
         <>
-            <Hero /> 
             <Navbar />
-            <Footer />
+            <Hero /> 
             <Mission />
+            <Footer />
         </>
     );
 };
