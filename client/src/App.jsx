@@ -5,6 +5,7 @@ import Mission from "./pages/MissionStatement";
 import AboutMe from "./pages/AboutMe";
 
 function App() {
+  
   return (
     <Router>
       <Navbar />

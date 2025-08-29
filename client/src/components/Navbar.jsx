@@ -1,20 +1,30 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 
-const Navbar = () => {
+
+const CustomNavbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar__logo"><Link to="/">UVU FITNESS</Link></div>
-      <ul className="navbar__links">
-        <li><Link to="/about">About Me</Link></li>
-        <li><Link to="/testimonials">Testimonials</Link></li>
-        <li><Link to="/pricing">Pricing</Link></li>
-        <li><Link to="/location">Location</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-      </ul>
-      <Link to="/schedule" className="navbar__cta">Schedule Now</Link>
-    </nav>
+    <Navbar fluid rounded>
+      <NavbarBrand href="https://flowbite-react.com">
+        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+      </NavbarBrand>
+      <div className="flex md:order-2">
+        <Button>Get started</Button>
+        <NavbarToggle />
+      </div>
+      <NavbarCollapse>
+        <NavbarLink href="#" active>
+          Home
+        </NavbarLink>
+        <NavbarLink href="#">About</NavbarLink>
+        <NavbarLink href="#">Services</NavbarLink>
+        <NavbarLink href="#">Pricing</NavbarLink>
+        <NavbarLink href="#">Contact</NavbarLink>
+      </NavbarCollapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default CustomNavbar;
